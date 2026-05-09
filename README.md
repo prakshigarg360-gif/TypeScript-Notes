@@ -68,11 +68,11 @@ git clone `<your-repo-link>`{=html}
 
 3️⃣ Install TypeScript (if not installed)
 
-npm install -g typescript ts-node
+npm install -g typescript
 
 4️⃣ Run files using:
 
-ts-node filename.ts
+tsc filename.ts && node filename.js
 
 👉 Practice by modifying examples and running them.
 
