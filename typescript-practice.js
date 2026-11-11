@@ -1,5 +1,9 @@
 "use strict";
-// Variables
+//Typescript is Javascript with types. It adds safety by catching errors during development instead of runtime.
+//Why this for automation: It provides better auto-complete, fewer bugs, and clerer code. this makes automation frameworks easier to build, read and maintain.
+//Types (Core Idea): type define what kind of value a variable can store. This prevents invalid data and reduces mistakes.
+// Variables: stores values that can be reused in the program. In typescript, we can also define the type of each variable.
+//let & const: use const by default. Use let only when the value changes.
 Object.defineProperty(exports, "__esModule", { value: true });
 // const nameValue:string ="WishInfinite"
 // // nameValue = "Test"
@@ -8,7 +12,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // url='https://www.wishinfinite.com'
 // console.log(url)
 //=============================================
-//Data Types
+//Data Types: Data types define what kind of data a variable holds. Sting: boolean, number
 // let course: string = 'TypeScript'
 // let course: string = "TypeScript"
 // let course: string = `TypeScript`
@@ -48,12 +52,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //             }
 // console.log(userDetails.password)
 //========================================
-//Functions
+//Functions: can define types of inputs and return values. this ensure correct data is passed and returned.
 // function sayHello(): void{
 //     console.log("Hello")
 // }
 // sayHello()
-// const sayHello2 = (): void=>{
+// const sayHello2 = (): void=>{                     //arrow function: morden and shorter syntex.
 //     console.log("Hello 2")
 // }
 // sayHello2()
@@ -66,20 +70,20 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // }
 // const addition = add2(30, 50)
 // console.log(addition)
-// function greet(name?: string){
+// function greet(name?: string){                //optional parameter witgh question mark
 //     console.log(`Hii ${name}`)
 // }
 // // greet("WishInfinite")
 // greet()
 //=========================================
-// Arithmetic Operators
+// Arithmetic Operators: used for mathematical calculations.
 // console.log(5 + 8)
 // console.log(100 - 70)
 // console.log(5 * 4)
 // console.log(10/2)
 // console.log(10%2)
 //==========================================
-//Comparison Operators
+//Comparison Operators: used to compare values and always return true or false. commonly used inside conditions and validations
 // let a: number = 3
 // let b: number = 9
 // console.log(a === b)
@@ -93,14 +97,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // console.log(a >= b)
 // console.log(a <= b)
 //========================================
-//Logical Operators
+//Logical Operators: used to combine multiple conditions. helps create more complex decision making logic.
 // let age: number = 15
 // let isLoggedIn: boolean = false
 // console.log(age>=18 && isLoggedIn)
 // console.log(age>=18 || isLoggedIn)
 // console.log(! (age>=18) )
 //=============================================================
-//Conditions (if / else)
+//Conditions (if / else): Conditions allow program to make decision based on true/false results.
 // let age : number = 29
 // if(age >= 18){
 //     console.log("Adult")
@@ -119,7 +123,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //     console.log("Invalid Numbers")
 // }
 //=============================================
-//Loops
+//Loops: repeat the same steps multiple times. useful when handling multiple elements or test data.
 // for(let i = 0; i <=10; i++){
 //     console.log(i)
 // }
@@ -131,12 +135,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //     console.log(user)
 // }
 //==================================
-// Async & Await
+// Async & Await: Async and await handles task that takes time to complete. 
 // async function loadData(): Promise<void> {
 //  await fetch("https://example.com");
 // }
 //=======================================
-//Interface
+//Interface: defines structure of objects. they make test data clean, reusable, and easy to maintain.
 // interface User {
 //     username: string;
 //     password: string;
@@ -149,7 +153,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // }
 // console.log(userDetail.username)
 //====================================
-//Type
+//Type: (Alternative to Interface): another way to define data structure. often used for custom types or limited value sets.
+//use interface for objects. used types for custom oro restricted values.
 // type User = {
 //     username: string;
 //     password: string;
